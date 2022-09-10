@@ -9,20 +9,24 @@ async function getAdvice() {
         const adviceId = await data.slip.id;
         const advice = await data.slip.advice;
         // grab element to append datapoints too
-        const body = document.getElementById('body');
+        const adviceIdFrag = document.getElementById('advice-id-frag');
+        const adviceFrag = document.getElementById('advice-frag');
         // create empty document fragment
-        const docFrag = document.createDocumentFragment();
+        const docFrag1 = document.createDocumentFragment();
+        const docFrag2 = document.createDocumentFragment();
         // create new HTML elements to append datapoints too
         let item1 = document.createElement('h1')
-        let item2 = document.createElement('h2')
+        let item2 = document.createElement('p')
         // asign datapoint variables to items
         item1.textContent = adviceId;
         item2.textContent = advice;
-        // append to empty document fragment
-        docFrag.appendChild(item1);
-        docFrag.appendChild(item2);
-        // append doc frag to DOM element
-        body.appendChild(docFrag);
+        // append to empty document fragments
+        docFrag1.appendChild(item1);
+        docFrag2.appendChild(item2);
+        // append doc frag to DOM
+        adviceIdFrag.appendChild(docFrag1);
+        adviceFrag.appendChild(docFrag2)
+        console.log(docFrag);
 
     } catch (error) {
         console.log('Error!');
