@@ -8,6 +8,11 @@
 
   <link rel="stylesheet" href="./styles.css">
 
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+
   <script src="./app.js"></script>
   
   <title>Frontend Mentor | Advice generator app</title>
@@ -20,8 +25,15 @@
   Advice # <div id="advice-id-frag"></div>
   </section>
   <section id="advice-text-area">
-  "<div id="advice-frag"></div>"
+  <div id="advice-frag"></div>
   </section>
+  <img id="divider-image-mobile"src="./images/pattern-divider-mobile.svg" alt="divider image">
+  <img id="divider-image-desktop" src="./images/pattern-divider-desktop.svg" alt="divider image">
+  <button  id="generate-advice-btn">
+    <a href="./index.html">
+    <img  onclick="getAdvice()" src="./images/icon-dice.svg" alt="button image">
+  </a>
+  </button>
   </div>
   </main>
   <footer>
