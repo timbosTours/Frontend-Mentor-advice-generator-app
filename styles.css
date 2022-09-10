@@ -10,6 +10,9 @@
 --grayish-blue: hsl(217, 19%, 38%);
 --dark-grayish-blue: hsl(217, 19%, 24%);
 --dark-blue: hsl(218, 23%, 16%);
+
+--ff-manrope-800: 'Manrope', sans-serif;
+
 }
 
 body{
@@ -24,20 +27,84 @@ body{
 
 #container {
     background-color: var(--dark-grayish-blue);
+    max-width: 20rem;
     min-width: 20rem;
-    min-height: 20rem;
+    min-height: 16rem;
     border-radius: 10px;
+    padding-bottom: 2em;
+    font-family: var(--ff-manrope-800);
+    position: relative;
 }
 
 #adviceId{
     color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 2em;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+#advice-id-frag{
+    font-size: xx-small;
+    margin-left: 0.5em;
+}
+
+#advice-id-frag h1{
+    font-weight: 100;
 }
 
 #advice-text-area{
-    color: var(--grayish-blue);
+    color: var(--light-cyan);
+    font-size: 28px;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#divider-image-mobile{
+    margin: 0.5em;
+}
+#divider-image-desktop{
+    display: none;
+}
+
+#generate-advice-btn{
+    background-color: var(--neon-green);
+    min-height: 4.5em;
+    min-width: 4.5em;
+    border: none;
+    border-radius: 50%;
+    margin-top: 3em;
+    display: block;
+    position: absolute;
+    bottom: -2.25em;
+    left: 9.79em;
+}
+
+#generate-advice-btn:hover{
+    box-shadow: 0 0 2em var(--neon-green);
 }
 
 footer{
     position: absolute;
     bottom: 0;
+    display: none;
+}
+
+@media (min-width: 600px) {
+    #container{
+        min-width: 34em;
+    }
+    #generate-advice-btn{
+        left: 44.5%;
+    }
+    #divider-image-mobile{
+        display: none;
+    }
+    #divider-image-desktop{
+        margin: 0.5em;
+        display: inline;
+    }
 }
