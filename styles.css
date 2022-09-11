@@ -43,7 +43,8 @@ body{
     text-transform: uppercase;
     padding: 2em;
     padding-top: 3em;
-    font-size: smaller;
+    font-size: large;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
