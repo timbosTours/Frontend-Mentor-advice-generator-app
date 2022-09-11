@@ -42,6 +42,7 @@ body{
     justify-content: center;
     text-transform: uppercase;
     padding: 2em;
+    padding-top: 3em;
     font-size: smaller;
     letter-spacing: 1px;
 }
@@ -58,6 +59,7 @@ body{
 #advice-text-area{
     color: var(--light-cyan);
     font-size: 28px;
+    font-weight: 500;
     margin-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -71,6 +73,7 @@ body{
 }
 
 #generate-advice-btn{
+    cursor: pointer;
     background-color: var(--neon-green);
     min-height: 4.5em;
     min-width: 4.5em;
@@ -81,6 +84,11 @@ body{
     position: absolute;
     bottom: -2.25em;
     left: 9.79em;
+    /* center the dice image */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 #generate-advice-btn:hover{
@@ -95,7 +103,7 @@ footer{
 
 @media (min-width: 600px) {
     #container{
-        min-width: 34em;
+        min-width: 32em;
     }
     #generate-advice-btn{
         left: 44.5%;

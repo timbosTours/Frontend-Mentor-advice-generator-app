@@ -1,9 +1,3 @@
-//  TO DO!!!
-// fix click hover bug??
-// fix firefox error?
-
-
-
 // Create an async function to retrive json data, convert it and display it on screen
 async function getAdvice() {
     try {

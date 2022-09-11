@@ -16,9 +16,9 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+Thank you for reviewing my code. I chose this Frontend Mentor challenge so I could practice working with API's. I look forward to taking on more difficult challenges where I can practice these skills.
 
 ### The challenge
 
@@ -91,6 +91,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
+
+I used this video to learn document.fragment().
+- https://www.youtube.com/watch?v=aUzCq-uabhw
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
